@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../npweb/.idea/npweb.iml" filepath="$PROJECT_DIR$/../../npweb/.idea/npweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/rubyrithms.iml" filepath="$PROJECT_DIR$/.idea/rubyrithms.iml" />
     </modules>
   </component>

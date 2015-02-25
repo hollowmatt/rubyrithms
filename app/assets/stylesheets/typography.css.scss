@@ -1,0 +1,120 @@
+/*doc
+---
+title: Typography
+name: typography
+category: all
+---
+```slim_example
+h1 I am a big h1
+h2 I'm still an important h2
+h3 Nobody uses h3 boo hoo
+h4 I'm an h4 used for smaller headings
+h5 h5 tags are a little rare, they're like diamonds!
+
+h1.slim h1 without all the margins
+h2.slim h2 without all the margins
+h3.slim h3 without all the margins
+h4.slim h4 without all the margins
+h5.slim h5 (they can live without margins too!)
+
+p A paragraph uses a different font
+
+| as does
+strong<> anything else
+| that is
+em<> text
+
+```
+*/
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  color:  $font-color;
+  font-weight: $font-weight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &, * {
+    font-family: 'Open Sans', sans-serif;
+    color: $true-black;
+  }
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+strong {
+  font-family: 'Open Sans', sans-serif;
+  color: $true-black;
+}
+
+.slim {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: $text-font-size;
+
+  &.lead {
+    font-size: 20px;
+  }
+}
+
+small {
+  font-size: $font-size-small;
+}
+
+/*doc
+---
+title: success, warning, and error colors
+name: text colors
+parent: typography
+category: all
+---
+```slim_example
+.success Oh Yeah!
+.warning Oh Snap!
+.error Oh Snap, I look the same as a warning!
+
+```
+*/
+
+.success {
+  color: green;
+}
+
+.warning, .error {
+  color: red;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
