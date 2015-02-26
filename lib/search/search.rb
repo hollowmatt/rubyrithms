@@ -15,7 +15,7 @@ module Search
 				while @low <= @high do
 					@count = @count + 1
 					mid = (@low + @high)/2
-					guess = @list[mid]
+					guess = mid
 					if guess == @num
 						stop = Time.now
 						@low = @high + 1
@@ -31,11 +31,9 @@ module Search
 			end
 
 			def reset
-				@list = []
 				@low = 0
 				@count = 0
-				(1..@size).each {|x| @list << x}
-				@high = @list.length - 1
+				@high = @size - 1
 			end
 
 			def print
@@ -61,9 +59,9 @@ module Search
 		private
 			def find
 				start = Time.now
-				@list.each do |x|
+				(0..@size).each do |x|
 					@count = @count + 1
-					if @list[x] == @num
+					if x == @num
 						stop = Time.now
 						puts "Correct guess in #{@count} tries, time: #{(stop - start) * 1000} milliseconds"
 					end
@@ -71,9 +69,7 @@ module Search
 			end
 
 			def reset
-				@list = []
 				@count = 0
-				(1..@size).each {|x| @list << x}
 			end
 
 			def print

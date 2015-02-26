@@ -35,7 +35,7 @@ class Double
 		@days = 30
 		@numsum = 1
 		double(1) 
-		puts @numsum/ 100.0
+		puts "$#{@numsum/ 100.0}"
 	end
 
 	def double(num)
