@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   get 'search/binary' => 'search#binary_search', as: :binary_search
+  post 'search/binary' => 'search#binary_results', as: :binary_search_results
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

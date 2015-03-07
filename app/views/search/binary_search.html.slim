@@ -1,0 +1,14 @@
+= form_tag binary_search_results_path
+  fieldset
+    .field
+      = label_tag "Input Size"
+      = number_field_tag :size  ,:placeholder => "Size of array .." , :autofocus => ''
+
+    .field
+      = label_tag "Number to find"
+      = number_field_tag :needle  ,:placeholder => "pick a number to find"
+
+    .field
+
+    div align="center"
+      = submit_tag 'Search'
