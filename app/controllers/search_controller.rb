@@ -12,6 +12,10 @@ class SearchController < ApplicationController
 
   end
 
+  def simple_results
+
+  end
+
   private
     def search_initialize(list_size, magic_number)
       @start = Time.now
